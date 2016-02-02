@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "4.2.2"
+
+before_deploy:
+- npm --no-git-tag-version version 1.0.$TRAVIS_BUILD_NUMBER
+deploy:
+  provider: npm
+  email: chris@cns.me.uk
+  api_key:
+    secure: Qqp/+2odmxsCL7H+mIBeUcU+/Vk4lqdGXRkpcFK8O+5kuaGva+IjbALbte2CVGnzw8lYTD8VJZbCOWe9TOvoXx19wYos8EQp4l2P0jglCJK43nfZP4nDvZ+6l6ixxxB7WFbZWbj2Ifb1ShgVZUwK9Xbdv2qKo33uAxEWLwQrpxJGUbq0Avmcg2xfAnuvaROIFMhOwUynL5t9atBx1cfjMLFJDQBoOwC45oisC+hCm6KbLpZS/5Oqmht96rZdlkt97psCYwM3NW9PkzWandf2U16vaVZ6NPzDPtu37TyBdQ9sS3BLRnQ6eX6CdQiB5Ii5JFg/hfapt15tn6ufLuumRR7GhkDkxHEr8gK5O4pyfPStAxo762XuWtSSP/op5w7kJgD4MSpUp5v3hfuL32xQ7W1rA/jlx/Ji1IkapXCdDL+CjMmaKNrpXK20tdrOGBaO/H8elq/1ws4a9JPbye1R3T+uYs5mQL5R/Svk65G+Xj/wHop6A+WovPcazg2q94hJActmqdouXbQrzvZScz64nVhSVYJ8MmHCWdC5qG5uZYjBuUascLIvvQp94RAG57LJ4zo+JRvLMWJpeom80rpmlYmQZdqDRAlvGXO4y0BF8KXULlNftJwga2gkCbndvG5eIwXZNEkdu9h4dBb/JxhYDoBFqlBKYljE9Wou3j4r8vo=
+  on:
+    repo: UKHomeOffice/custom-fields-middleware
+    branch: master
