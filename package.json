@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:UKHomeOffice/custon-fields-middleware.git"
+    "url": "git@github.com:UKHomeOffice/custom-fields-middleware.git"
   },
   "license": "MIT",
   "precommit": ["test", "lint"]
