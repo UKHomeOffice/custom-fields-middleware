@@ -1,4 +1,4 @@
-# Custom Fields Middleware
+# Custom Fields Middleware [![Build Status](https://travis-ci.org/UKHomeOffice/custom-fields-middleware.svg?branch=master)](https://travis-ci.org/UKHomeOffice/custom-fields-middleware)
 
 Adds and transforms custom fields on the response
 
